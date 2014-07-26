@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var http = require("http").Server(app);
 var io = require("socket.io")(http);
-var port = (process.env.NODE_ENV == 'production')
+var port = 3000;
 
 app.get('/', function(req, res){
 	res.sendfile("index.html");
